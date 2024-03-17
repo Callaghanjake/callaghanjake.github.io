@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesbkr | Home</title>
+
+    <!-- Google Font IBM Plex Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+
+    <!-- Google Font Raleway -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Layout CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/layout.css">
+
+    <!-- Photo albums CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/albumcarousel.css">
+
+    <!-- Top navigation transition JS -->
+    <script src="/js/header-transition.js" defer></script>
+</head>
+
+<body>
+    <nav class="top-navigation">
+        <ul>
+            <a href="#about" class="top-nav-about"><li>About</li></a>
+            <a href="#work" class="top-nav-work"><li>Work</li></a>
+            <a href="#blog" class="top-nav-blog"><li >Blog</li></a>
+            <a href="#contact" class="top-nav-contact"><li>Contact</li></a>
+        </ul>
+    </nav>
+
+    <section class="wrapper landing-page">
+        <h1 class="center-title">Matthew Baker</br>Photography</h1>
+        <nav class="landing-nav">
+            <ul>
+                <a href="#about"><li>About</li></a>
+                <a href="#work"><li>Work</li></a>
+                <a href="#blog"><li>Blog</li></a>
+                <a href="#contact"><li>Contact</li></a>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="wrapper" id="about">
+        <div class="center-content">
+            <h1 class="title">About</h1>
+            <p class="info">
+                Originally from the North West of England, Matt is now based in Southeast London.</br>
+                With a focus on portraits, headshots and theatre photography, Matt also enjoys spending time
+                shooting on the streets of London which is where the majority of his day to day images are taken.
+                </br>Matt has over a decade of experience working in adult social care and this is where he attributes 
+                his drive to give each of his clients as much power of their images as possible.
+            </p>
+        </div>
+    </section>
+
+    <section class="wrapper" id="work">
+        <div class="top-content">
+            <h1 class="title">Work</h1>
+            <p class="info">
+                Below is a collection of Matt's work. This includes landscapes, portraits, 
+                street photgraphy and a selection of theatre shots. Click each album and take a look at a few 
+                of his favourites.
+            </p>
+        </div>
+
+        <div class="album-wrapper">
+            <a href="#" title="Landscapes Album">
+                <img class="album-image" src="./img/landscapeAlbumCover.JPEG" loading="lazy">
+                <div class="album-title">Landscapes</div>
+            </a>
+
+            <a href="#" title="Portraits Album">
+                <img class="album-image" src="./img/portraitsAlbumCoverMedium.jpeg" loading="lazy">
+                <div class="album-title">Portraits</div>
+            </a>
+
+            <a href="#" title="Street Photography Album">
+                <img class="album-image" src="./img/streetAlbumCoverMedium.jpeg" loading="lazy">
+                <div class="album-title">Street Photography</div>
+            </a>
+
+            <a href="#" title="Theatre Album">
+                <img class="album-image" src="./img/theatreAlbumCoverMedium.jpeg" loading="lazy">
+                <div class="album-title">Theatre</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- <section class="wrapper" id="blog">
+        <div class="top-content">
+            <h1 class="title">Blog</h1>
+            <p class="info">
+                This is just text to fill the gap. There should be something here about 
+                Baker wanting to start a blog...
+            </p>
+        </div>
+    </section> -->
+
+    <section class="wrapper" id="contact">
+        <div class="top-content">
+            <h1 class="title">Contact</h1>
+            <p class="info">
+                Get in touch to discuss the services on offer or to buy a high quality print package.
+                Note: Matt's working area is typically London but if you'd like to discuss a different 
+                shoot location you can also do so here.
+            </p>
+
+            <form action="serversideFormHandlerHere.php" method="post" id="contact-form">
+                <label for="name">Name</label><br>
+                <input type="text" id="form-name" name="name" placeholder="Your name" required>
+
+                <br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="form-email" name="email" placeholder="Your email address"required>
+
+                <br>
+
+                <label for="message">Message</label><br>
+                <textarea id="form-message" name="message" placeholder="Your message"required></textarea>
+
+                <br>
+
+                <label class="hiddenInput" for="website">Website (Optional)</label>
+                <input type="text" id="form-website" name="website" class="hiddenInput">
+
+                <br>
+                
+                <button class="submit-btn"type="submit">Send</button>
+              </form>
+        </div>
+    </section>
+
+    <footer>
+        <ul class="footer-nav">
+            <a href="index.html" class="footer-home"><li>Home page</li></a>
+            <a href="#" class="footer-about"><li>About</li></a>
+            <a href="#" class="footer-work"><li>Work</li></a>
+            <!-- <a href="#" class="footer-blog"><li>Blog</li></a> -->
+            <a href="#" class="footer-social"><li>Instagram</li></a>
+        </ul>
+    </footer>
+
+    <script id="setmore_script" 
+      type="text/javascript" 
+      src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js">
+    </script>
+
+    <a style="float:none; 
+      position: fixed; 
+      right: 60px; 
+      rotate: 90deg; 
+      bottom: -65px; 
+      display: block; 
+      z-index: 20000" 
+      id="Setmore_button_iframe"  
+      href="https://booking.setmore.com/scheduleappointment/c6dfdc34-2085-4bc4-9b78-fcf4f964d71b">
+      <img border="none" src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Calendar/Setmore-Book-Now.png" 
+      alt="Book an appointment with Matthew Baker using Setmore"/>
+    </a>
+
+</body>
+</html>

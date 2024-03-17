@@ -1,0 +1,44 @@
+
+.album-wrapper {
+    margin: auto;
+    border-bottom: solid black;
+    padding: 1rem;
+    display: flex;
+    overflow-x: scroll;
+    scroll-padding: 0 50%;
+    scroll-snap-type: x mandatory;
+    max-width: 600px;
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.album-wrapper a {
+    text-decoration: none;
+}
+
+.album-image {
+    scroll-snap-align: center;
+    display: inline-block;
+    height: 300px;
+    width: 300px;    
+    border-radius: 3px;
+    margin-right: 1rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+}
+
+.album-title {
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: relative;
+    width: 300px;
+    bottom: 56px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    font-family: IBM Plex Sans;
+
+}
