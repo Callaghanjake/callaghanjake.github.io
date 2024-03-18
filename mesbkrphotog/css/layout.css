@@ -7,8 +7,9 @@
 
 .top-navigation {
     position: fixed;
-    width: 100%;
-    padding: 20px;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
     transition: all 0.2s;
     background-color: black;
     z-index: 10;
@@ -56,6 +57,7 @@
 
 .wrapper {
     min-height: 100vh;
+    width: 100vw;
     background-color: white;
     display: grid;
     grid-template-columns: 20% 1fr 20%;
@@ -136,6 +138,18 @@
     font-family: IBM Plex Sans;
     width: 60%;
     margin: auto;
+}
+
+@media (width <= 768px) {
+    #contact-form {
+        /* border: solid red; */
+        padding: 20px 20px;
+        margin: 20px 0 0 20px;
+        font-size: 1.2rem;
+        font-family: IBM Plex Sans;
+        width: 100%;
+        margin: auto;
+    }
 }
 
 #form-name {
