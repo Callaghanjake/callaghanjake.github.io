@@ -21,5 +21,5 @@ function callBackFunction(entries) {
         navigation.classList.add('show');
         // toTopBtn.classList.add('show');
     }
-    console.log(entries);
+    // console.log(entries);
 }

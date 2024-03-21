@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* font-family: IBM Plex Sans; */
+}
+
+.top-navigation {
+    position: fixed;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.2s;
+    background-color: white;
+    z-index: 10;
+    opacity: 0;
+    font-family: Raleway;
+}
+
+.top-navigation ul {
+    display: grid;
+    grid-template-columns: 30% 1fr 1fr 1fr 1fr 30%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.top-navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.top-navigation a:hover {
+    color: silver;
+}
+
+.top-nav-about {
+    grid-column: 2;
+    place-self: center stretch;
+}
+.top-nav-work {
+    grid-column: 3;
+    place-self: center stretch;
+}
+.top-nav-blog {
+    grid-column: 4;
+    place-self: center stretch;
+}
+.top-nav-contact {
+    grid-column: 5;
+    place-self: center stretch;
+}
+
+.show {
+    opacity: 100;
+}
+
+.wrapper {
+    min-height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.album-page {
+    min-height: 50vh;
+}
+
+.album-page-title {
+    grid-column: 2;
+    color: black;
+    place-self: center;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: lighter;
+    font-family: Raleway;
+}
+
+.gallery-wrapper {
+    /* border: solid red; */
+    padding: 5vh 0 5vh 0;
+}
+
+.gallery {
+    /* border: solid blue; */
+    display: grid;
+    width: 60%;
+    margin: auto;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 10px;
+}
+
+.gallery-image {
+    height: 280px;
+    width: 280px;
+    background: black;
+    place-self: center;
+    object-fit: cover;
+}
+
+.album-next-previous {
+    height: 20vh;
+    display: grid;
+    grid-template-columns: 1fr 15% 1fr;
+    font-family: Raleway;
+    font-size: 1.3rem;
+}
+
+.album-next-previous a {
+    text-decoration: none;
+    color: black;
+}
+
+.album-next-previous a:hover {
+    color: silver;
+}
+
+.previous-wrapper {
+    grid-column: 1;
+    place-self: center;
+}
+
+.next-wrapper {
+    grid-column: 3;
+    place-self: center;
+}
+
+
+footer {
+    min-height: 15vh;
+    background-color: black;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-nav {
+    max-width: 80%;
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    text-align: center;
+    gap: 10px;
+    padding-top: 10px;
+    font-family: IBM Plex Sans;
+    height: inherit;
+
+}
+
+footer ul {
+    margin: auto;
+}
+
+footer ul a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul a:hover {
+    color: grey;
+}
