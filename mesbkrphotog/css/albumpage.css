@@ -24,6 +24,12 @@
     list-style-type: none;
 }
 
+@media (width <= 768px) {
+    .top-navigation ul {
+        grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    }
+}
+
 .top-navigation a {
     text-decoration: none;
     color: black;
@@ -78,6 +84,7 @@
 
 .gallery-wrapper {
     /* border: solid red; */
+    width: 100vw;
     padding: 5vh 0 5vh 0;
 }
 

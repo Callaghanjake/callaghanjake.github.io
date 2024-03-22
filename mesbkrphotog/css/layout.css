@@ -61,6 +61,7 @@
     background-color: white;
     display: grid;
     grid-template-columns: 20% 1fr 20%;
+    overflow-x: hidden;
 }
 
 .wrapper:nth-child(2) {
@@ -169,7 +170,11 @@
     }
 }
 
-
+@media (width <= 600px) {
+    .center-title {
+        margin-bottom: 50px;
+    }
+}
 
 #form-name {
     width: 100%;
