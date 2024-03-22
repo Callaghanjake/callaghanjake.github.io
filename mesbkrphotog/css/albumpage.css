@@ -86,6 +86,7 @@
     /* border: solid red; */
     width: 100vw;
     padding: 5vh 0 5vh 0;
+    margin: auto;
 }
 
 .gallery {
