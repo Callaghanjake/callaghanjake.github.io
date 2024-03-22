@@ -1,0 +1,36 @@
+footer {
+    min-height: 15vh;
+    background-color: black;
+    font-size: 1.1rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 100vw;
+    scroll-snap-align: start;
+}
+
+.footer-nav {
+    max-width: 80%;
+    display: grid;
+    list-style-type: none;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    text-align: center;
+    gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: IBM Plex Sans;
+    height: inherit;
+
+}
+
+footer ul {
+    margin: auto;
+}
+
+footer ul a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul a:hover {
+    color: grey;
+}
