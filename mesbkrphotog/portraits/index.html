@@ -24,6 +24,9 @@
 
     <!-- Top navigation transition JS -->
     <script src="../js/header-transition.js" defer></script>
+
+    <!-- Lazy image loading -->
+    <script src="../js/lazy-images.js" defer></script>
 </head>
 
 <body>
@@ -42,15 +45,15 @@
 
     <section class="gallery-wrapper">
         <div class="gallery">
-            <img class="gallery-image" src="../img/portrait/portrait-1-medium.jpeg">
-            <img class="gallery-image" src="../img/portrait/portrait-2-medium.jpeg">
-            <img class="gallery-image" src="../img/portrait/portrait-3-medium.jpeg">
-            <img class="gallery-image" src="../img/portrait/portrait-4-medium.jpeg">
-            <img class="gallery-image" src="../img/portrait/portrait-5-medium.jpeg">
-            <img class="gallery-image" src="../img/portrait/portrait-6-medium.jpeg">
-            <img class="gallery-image" src="../img/portrait/portrait-7-medium.jpeg">
-            <img class="gallery-image" src="../img/portrait/portrait-8-medium.jpeg">
-            <img class="gallery-image" src="../img/portrait/portraitsAlbumCoverMedium.jpeg">
+            <img class="gallery-image" data-src="../img/portrait/portrait-1-medium.jpeg" loading="lazy">
+            <img class="gallery-image" data-src="../img/portrait/portrait-2-medium.jpeg" loading="lazy">
+            <img class="gallery-image" data-src="../img/portrait/portrait-3-medium.jpeg" loading="lazy">
+            <img class="gallery-image" data-src="../img/portrait/portrait-4-medium.jpeg" loading="lazy">
+            <img class="gallery-image" data-src="../img/portrait/portrait-5-medium.jpeg" loading="lazy">
+            <img class="gallery-image" data-src="../img/portrait/portrait-6-medium.jpeg" loading="lazy">
+            <img class="gallery-image" data-src="../img/portrait/portrait-7-medium.jpeg" loading="lazy">
+            <img class="gallery-image" data-src="../img/portrait/portrait-8-medium.jpeg" loading="lazy">
+            <img class="gallery-image" data-src="../img/portrait/portraitsAlbumCoverMedium.jpeg" loading="lazy">
         </div>
     </section>
 
