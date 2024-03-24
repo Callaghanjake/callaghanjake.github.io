@@ -84,6 +84,19 @@ html {
     font-family: Raleway;
 }
 
+@media (width < 768px) {
+    .center-title {
+        grid-column: 2;
+        color: white;
+        place-self: center;
+        text-align: center;
+        font-size: 3rem;
+        width: 600px;
+        font-weight: lighter;
+        /* border: solid red; */
+    }
+}
+
 .landing-nav {
     grid-column: 3;
     font-size: 1.5rem;
@@ -209,10 +222,7 @@ html {
     margin-top: 10px;
     border: solid black;
     font-size: 1.1rem;
-}
-
-.hiddenInput {
-    display: none;
+    font-family: IBM Plex Sans;
 }
 
 .submit-btn {

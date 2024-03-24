@@ -97,7 +97,7 @@
         </div>
     </section>
 
-    <!-- <section class="wrapper" id="blog">
+    <section class="wrapper" id="blog">
         <div class="top-content">
             <h1 class="title">Blog</h1>
             <p class="info">
@@ -105,7 +105,7 @@
                 Baker wanting to start a blog...
             </p>
         </div>
-    </section> -->
+    </section>
 
     <section class="wrapper" id="contact">
         <div class="top-content">
@@ -116,37 +116,33 @@
                 shoot location you can also do so here.
             </p>
 
-            <form action="serversideFormHandlerHere.php" method="post" id="contact-form">
-                <label for="name">Name</label><br>
-                <input type="text" id="form-name" name="name" placeholder="Your name" required>
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
 
-                <br>
-
-                <label for="email">Email</label><br>
-                <input type="email" id="form-email" name="email" placeholder="Your email address"required>
-
-                <br>
-
-                <label for="message">Message</label><br>
-                <textarea id="form-message" name="message" placeholder="Your message"required></textarea>
-
-                <br>
-
-                <label class="hiddenInput" for="website">Website (Optional)</label>
-                <input type="text" id="form-website" name="website" class="hiddenInput">
-
-                <br>
-                
-                <button class="submit-btn"type="submit">Send</button>
-              </form>
+                <!-- Replace with your Access Key -->
+                <input type="hidden" name="access_key" value="c9e97f21-c99d-4b10-ab2c-7a283e595095">
+            
+                <!-- Form Inputs. Each input must have a name="" attribute -->
+                <input id="form-name" type="text" name="name" placeholder="Your name" required>
+                <input id="form-email"type="email" name="email" placeholder="Your email address" required>
+                <textarea id="form-message" name="message" placeholder="Your message here" required></textarea>
+            
+                <!-- hCaptcha Spam Protection -->
+                <div class="h-captcha" data-captcha="true"></div>
+            
+                <button class="submit-btn" type="submit">Submit Form</button>
+        
+            </form>
+            
+            <!-- Required for hCaptcha -->
+            <script src="https://web3forms.com/client/script.js" async defer></script>
         </div>
     </section>
 
     <footer>
         <ul class="footer-nav">
             <a href="index.html" class="footer-home"><li>Home page</li></a>
-            <a href="#" class="footer-about"><li>About</li></a>
-            <a href="#" class="footer-work"><li>Work</li></a>
+            <a href="#about" class="footer-about"><li>About</li></a>
+            <a href="#work" class="footer-work"><li>Work</li></a>
             <!-- <a href="#" class="footer-blog"><li>Blog</li></a> -->
             <a href="#" class="footer-social"><li>Instagram</li></a>
         </ul>
