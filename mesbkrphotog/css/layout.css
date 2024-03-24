@@ -95,9 +95,9 @@ html {
         text-align: center;
         font-size: 2.7rem;
         font-weight: lighter;
-        /* border: solid red; */
+        border: solid red;
         max-width: 300px;
-        margin-top: -20px;
+        margin-top: -40px;
     }
 }
 
