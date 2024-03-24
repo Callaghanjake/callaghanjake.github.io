@@ -84,7 +84,7 @@ html {
     font-family: Raleway;
 }
 
-@media (width < 600px) {
+@media (width < 550px) {
     .wrapper:nth-child(2) {
         display: flex;
         align-items: center;
