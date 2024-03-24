@@ -6,7 +6,7 @@
 }
 
 html {
-    scroll-snap-type: y proximity;
+    scroll-snap-type: y mandatory;
 }
 
 .top-navigation {
@@ -89,6 +89,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
+        min-height: 95vh;
     }
     .center-title {
         color: white;
