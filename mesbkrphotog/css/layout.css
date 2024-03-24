@@ -97,6 +97,7 @@ html {
         font-weight: lighter;
         /* border: solid red; */
         max-width: 300px;
+        margin-top: -20px;
     }
 }
 
