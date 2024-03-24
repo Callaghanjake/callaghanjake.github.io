@@ -84,7 +84,7 @@ html {
     font-family: Raleway;
 }
 
-@media (width < 768px) {
+@media (width < 600px) {
     .center-title {
         grid-column: 2;
         color: white;
