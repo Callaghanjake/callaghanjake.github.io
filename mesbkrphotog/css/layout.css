@@ -85,10 +85,14 @@ html {
 }
 
 @media (width < 600px) {
+    .wrapper:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .center-title {
         color: white;
         text-align: center;
-        margin: auto;
         font-size: 2.7rem;
         font-weight: lighter;
         /* border: solid red; */
