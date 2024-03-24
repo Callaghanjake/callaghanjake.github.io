@@ -89,7 +89,6 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 95vh;
     }
     .center-title {
         color: white;
@@ -98,7 +97,6 @@ html {
         font-weight: lighter;
 /*         border: solid red; */
         max-width: 300px;
-        margin-top: -40px;
     }
 }
 
