@@ -86,14 +86,12 @@ html {
 
 @media (width < 600px) {
     .center-title {
-        grid-column: 2;
         color: white;
-        place-self: center;
         text-align: center;
-        font-size: 3rem;
-        width: 600px;
+        font-size: 2.7rem;
         font-weight: lighter;
         /* border: solid red; */
+        min-width: 300px;
     }
 }
 
