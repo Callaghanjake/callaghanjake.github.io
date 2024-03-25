@@ -85,12 +85,14 @@ html {
 }
 
 @media (width < 600px) {
+    .wrapper {
+        height: 100svh;
+    }
     .wrapper:nth-child(2) {
         display: flex;
         align-items: center;
         justify-content: center;
         height: 100svh;
-        bottom: 0;
     }
     .center-title {
         color: white;
