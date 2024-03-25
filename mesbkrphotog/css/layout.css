@@ -89,7 +89,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 100vh;
+        height: 100dvh;
         bottom: 0;
     }
     .center-title {
