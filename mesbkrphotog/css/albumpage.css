@@ -36,12 +36,18 @@
 .gallery {
     /* border: solid blue; */
     display: grid;
-    max-width: 60%;
+    /* max-width: 60%; */
     margin: auto;
     row-gap: 5px;
     column-gap: 15px;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     padding: 10px;
+}
+
+@media (width > 600px) {
+    .gallery {
+        max-width: 60%;
+    }
 }
 
 .gallery-image {
