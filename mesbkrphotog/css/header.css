@@ -1,0 +1,56 @@
+
+.top-navigation {
+    position: fixed;
+    width: 100vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    transition: all 0.2s;
+    background-color: white;
+    z-index: 10;
+    opacity: 0;
+    font-family: Raleway;
+}
+
+.top-navigation ul {
+    display: grid;
+    grid-template-columns: 30% 1fr 1fr 1fr 1fr 30%;
+    text-align: center;
+    list-style-type: none;
+}
+
+.top-navigation a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.top-navigation a:hover {
+    color: silver;
+}
+
+.top-nav-about {
+    grid-column: 2;
+    place-self: center stretch;
+}
+.top-nav-work {
+    grid-column: 3;
+    place-self: center stretch;
+}
+.top-nav-blog {
+    grid-column: 4;
+    place-self: center stretch;
+}
+.top-nav-contact {
+    grid-column: 5;
+    place-self: center stretch;
+}
+
+.show {
+    opacity: 100;
+}
+
+@media (width <= 768px) {
+    .top-navigation ul {
+        grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    }
+}
