@@ -9,7 +9,7 @@ footer {
 }
 
 .footer-nav {
-    max-width: 80%;
+    max-width: 70%;
     display: grid;
     list-style-type: none;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
