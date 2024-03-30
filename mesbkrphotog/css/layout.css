@@ -78,7 +78,6 @@
     width: 100%;
     font-size: 1.5rem;
     padding: 15px;
-
 }
 
 .center-content {
@@ -107,10 +106,45 @@
     font-family: IBM Plex Sans;
 }
 
-.coming-soon {
-    /* background-color: red; */
-    text-align: center;
-    padding: 100px 0 100px 0;
+.social-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 15px;
+    max-width: 75%;
+    margin: auto;
+}
+
+.blog-section {
+    display: grid;
+    height: 300px;
+    width: 300px;
+    place-self: center;
+    object-fit: cover;
+    border-bottom: solid black;
+}
+
+.blog-logo {
+    place-self: center;
+    text-decoration: none;
+    font-family: Raleway;
+    color: black;
+}
+
+.social-section {
+    display: grid;
+    height: 300px;
+    width: 300px;
+    place-self: center;
+    object-fit: cover;
+    border-bottom: solid black;
+}
+
+.insta-logo {
+    place-self: center;
+}
+
+.insta-logo img {
+    height: 200px;
 }
 
 #contact-form {
