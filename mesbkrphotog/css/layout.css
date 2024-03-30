@@ -114,6 +114,12 @@
     margin: auto;
 }
 
+@media (width <= 600px) {
+    .social-wrapper {
+        max-width: 100%;
+    }
+}
+
 .blog-section {
     display: grid;
     height: 300px;
