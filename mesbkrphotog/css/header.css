@@ -11,36 +11,52 @@
     font-family: Raleway;
 }
 
-.top-navigation ul {
+.top-navigation-list {
     display: grid;
     grid-template-columns: 30% 1fr 1fr 1fr 1fr 30%;
     text-align: center;
     list-style-type: none;
 }
 
+.top-navigation button {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    background-color: white;
+    border: none;
+    padding: 0 15px 0  15px;
+}
+
 .top-navigation a {
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
+    background-color: white;
+    border: none;
+    padding: 0 15px 0  15px;
+}
+
+.top-navigation button:hover {
+    color: silver;
 }
 
 .top-navigation a:hover {
     color: silver;
 }
 
-.top-nav-about {
+.top-nav-one {
     grid-column: 2;
     place-self: center stretch;
 }
-.top-nav-work {
+.top-nav-two {
     grid-column: 3;
     place-self: center stretch;
 }
-.top-nav-blog {
+.top-nav-three {
     grid-column: 4;
     place-self: center stretch;
 }
-.top-nav-contact {
+.top-nav-four {
     grid-column: 5;
     place-self: center stretch;
 }
