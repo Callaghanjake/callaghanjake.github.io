@@ -153,6 +153,12 @@
     height: 200px;
 }
 
+@media (width <= 600px) {
+    .insta-logo img {
+        height: 150px;
+    }
+}
+
 #contact-form {
     /* border: solid red; */
     padding: 20px 20px;
