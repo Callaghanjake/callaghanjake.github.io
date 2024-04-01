@@ -2,13 +2,6 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* font-family: IBM Plex Sans; */
-}
-
-@media (width > 600px) {
-    html {
-        scroll-snap-type: y mandatory;
-    }
 }
 
 .wrapper {
@@ -34,25 +27,6 @@
     font-size: 3rem;
     font-weight: lighter;
     font-family: Raleway;
-}
-
-@media (width < 600px) {
-    .wrapper:nth-child(2) {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100vh;
-
-    }
-    .center-title {
-        color: white;
-        text-align: center;
-        font-size: 2.7rem;
-        font-weight: lighter;
-        /* border: solid red; */
-        max-width: 300px;
-        margin-top: -20px
-    }
 }
 
 .landing-nav {
@@ -117,12 +91,6 @@
     margin: auto;
 }
 
-@media (width <= 600px) {
-    .social-wrapper {
-        max-width: 100%;
-    }
-}
-
 .blog-section {
     display: grid;
     height: 300px;
@@ -156,50 +124,13 @@
     height: 180px;
 }
 
-@media (width <= 600px) {
-    .insta-logo img {
-        height: 140px;
-    }
-}
-
 #contact-form {
-    /* border: solid red; */
     padding: 20px 20px;
     margin: 20px 0 0 20px;
     font-size: 1.2rem;
     font-family: IBM Plex Sans;
     width: 60%;
     margin: auto;
-}
-
-@media (width <= 768px) {
-    #contact-form {
-        /* border: solid red; */
-        padding: 20px 20px;
-        margin: 20px 0 0 20px;
-        font-size: 1.2rem;
-        font-family: IBM Plex Sans;
-        width: 100%;
-        margin: auto;
-    }
-}
-
-@media (width <= 768px) {
-    .wrapper {
-        grid-template-columns: 5% 1fr 5%;
-    }
-}
-
-@media (width <= 600px) {
-    .landing-nav {
-        display: none;
-    }
-}
-
-@media (width <= 600px) {
-    .center-title {
-        margin-bottom: 50px;
-    }
 }
 
 #form-name {
@@ -260,4 +191,64 @@
     cursor: pointer;
     font-family: Raleway;
     text-decoration: none;
+}
+
+@media (width <= 600px) {
+    
+}
+
+@media (width <= 768px) {
+    #contact-form {
+        padding: 20px 20px;
+        margin: 20px 0 0 20px;
+        font-size: 1.2rem;
+        font-family: IBM Plex Sans;
+        width: 100%;
+        margin: auto;
+    }
+
+    .wrapper {
+        grid-template-columns: 5% 1fr 5%;
+    }
+}
+
+@media (width <= 600px) {
+    .social-wrapper {
+        max-width: 100%;
+    }
+
+    .landing-nav {
+        display: none;
+    }
+
+    .center-title {
+        margin-bottom: 50px;
+    }
+
+    .wrapper:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+
+    }
+    .center-title {
+        color: white;
+        text-align: center;
+        font-size: 2.7rem;
+        font-weight: lighter;
+        max-width: 300px;
+        margin-top: -20px
+    }
+
+    .insta-logo img {
+        height: 140px;
+    }
+}
+
+
+@media (width > 600px) {
+    html {
+        scroll-snap-type: y mandatory;
+    }
 }
