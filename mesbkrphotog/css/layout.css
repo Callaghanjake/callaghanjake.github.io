@@ -96,6 +96,7 @@
     font-size: 2rem;
     height: 10vh;
     font-family: Raleway;
+    padding-top: 2vh;
 }
 
 .info {
@@ -104,6 +105,7 @@
     word-spacing: 2px;
     line-height: 1.6rem;
     font-family: IBM Plex Sans;
+    padding-top: 2vh;
 }
 
 .social-wrapper {
@@ -150,12 +152,12 @@
 }
 
 .insta-logo img {
-    height: 200px;
+    height: 180px;
 }
 
 @media (width <= 600px) {
     .insta-logo img {
-        height: 150px;
+        height: 140px;
     }
 }
 
@@ -239,4 +241,22 @@
     padding: 10px 0 10px 0;
     font-size: 1.1rem;
     cursor: pointer;
+}
+
+.booking-btn {
+    z-index: 100;
+    position: fixed;
+    bottom: 15px;
+    right: 5px;
+    margin: 10px;
+}
+
+.booking-btn a {
+    background-color: black;
+    color: white;
+    border: solid white 1px;
+    padding: 10px;
+    cursor: pointer;
+    font-family: Raleway;
+    text-decoration: none;
 }
