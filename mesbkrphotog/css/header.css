@@ -69,7 +69,7 @@
 }
 
 @media (width <= 768px) {
-    .top-navigation ul {
-        grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    .top-navigation-list {
+        grid-template-columns: 1% 1fr 1fr 1fr 1fr 1%;
     }
 }
